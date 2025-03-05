@@ -1,0 +1,20 @@
+{
+  "name": "2-ecommerce-fake-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.1",
+    "express": "^4.21.2",
+    "json-server": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
