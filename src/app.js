@@ -48,6 +48,6 @@ app.get("/products/:id", async (req, res) => {
   res.json(allProducts.data);
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(8008, () => {
+  console.log("Server is running on port 8008");
 });

@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "json-server --watch db.json --port 3000",
-    "dev": "nodemon src/app.js & json-server --watch db.json --port 3001"
+    "dev": "concurrently \"nodemon src/app.js\" \"json-server --watch db.json --port 3001\"",
+    "dev:linux": "nodemon src/app.js & json-server --watch db.json --port 3001",
+    "dev:win": "start nodemon src/app.js && start json-server --watch db.json --port 3001"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.8.1",
+    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "express": "^4.21.2",
